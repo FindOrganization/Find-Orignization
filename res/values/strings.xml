@@ -12,5 +12,6 @@
     <string name="register">Register</string>
     <string name="login">Lon In</string>
     <string name="title_activity_register_view">RegisterView</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
 
 </resources>

@@ -25,23 +25,26 @@ public final class R {
         public static final int loginbackground=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080008;
+        public static final int action_settings=0x7f080009;
         public static final int inputName=0x7f080005;
         public static final int inputPassword=0x7f080004;
         public static final int inputUser=0x7f080007;
         public static final int logIn=0x7f080002;
         public static final int password=0x7f080003;
         public static final int register=0x7f080000;
+        public static final int showUserName=0x7f080008;
         public static final int titleProject=0x7f080001;
         public static final int userName=0x7f080006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_register_view=0x7f030001;
+        public static final int activity_main_page=0x7f030001;
+        public static final int activity_register_view=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
-        public static final int register_view=0x7f070001;
+        public static final int main_page=0x7f070001;
+        public static final int register_view=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -53,6 +56,7 @@ public final class R {
         public static final int project_title=0x7f050004;
         public static final int register=0x7f050008;
         public static final int title_activity_log_in_page=0x7f050003;
+        public static final int title_activity_main_page=0x7f05000b;
         public static final int title_activity_register_view=0x7f05000a;
         public static final int username=0x7f050006;
     }

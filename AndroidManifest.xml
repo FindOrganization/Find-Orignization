@@ -26,6 +26,10 @@
             android:name="com.example.zhaozuzhi.RegisterView"
             android:label="@string/title_activity_register_view" >
         </activity>
+        <activity
+            android:name="com.example.zhaozuzhi.MainPageActivity"
+            android:label="@string/title_activity_main_page" >
+        </activity>
     </application>
 
 </manifest>

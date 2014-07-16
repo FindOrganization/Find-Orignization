@@ -92,6 +92,10 @@ public class LogInView extends Activity {
 					//login successfully
 					Toast.makeText(LogInView.this,
 	                        "successful!", Toast.LENGTH_SHORT).show();
+					Intent sucIntent = new Intent();
+					sucIntent.putExtra("name", inputUserName);
+					sucIntent.setClass(LogInView.this, MainPageActivity.class);
+					LogInView.this.startActivity(sucIntent);
 				}else{
 					Toast.makeText(LogInView.this,
 	                        "not match!", Toast.LENGTH_SHORT).show();

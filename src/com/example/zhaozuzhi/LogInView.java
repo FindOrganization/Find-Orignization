@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LogInView extends Activity {
 	
@@ -21,7 +22,9 @@ public class LogInView extends Activity {
 	private EditText inputPassword= null;
 	private Button register = null;
 	private Button logIn = null;
+	private boolean checkMatch;
 	
+	private LogInModel logInModel;
 	
 	
 	@Override
@@ -47,7 +50,8 @@ public class LogInView extends Activity {
 		
 		//create button click listener to check if button clicked
 		
-		register.setOnClickListener(new MyButtonListener());
+		register.setOnClickListener(new registerListener());
+		logIn.setOnClickListener(new logInListener());
 	}
 
 	@Override
@@ -57,8 +61,8 @@ public class LogInView extends Activity {
 		return true;
 	}
 	
-	//Button click listener cleasses
-	class MyButtonListener implements OnClickListener{
+	//Button click listener classes
+	class registerListener implements OnClickListener{
 
 		@Override
 		public void onClick(View v) {
@@ -69,5 +73,32 @@ public class LogInView extends Activity {
 		}
 		
 	}
+	class logInListener implements OnClickListener{
 
+		@Override
+		public void onClick(View v) {
+			String inputUserName = inputName.getText().toString();
+			String inputPassWord = inputPassword.getText().toString();
+			if (inputUserName.equals("")){
+				Toast.makeText(LogInView.this,
+                        "user name can't be empty!", Toast.LENGTH_SHORT).show();
+			}else if (inputPassWord.equals("")){
+				Toast.makeText(LogInView.this,
+                        "password can't be empty!", Toast.LENGTH_SHORT).show();
+			}else{
+				logInModel=new LogInModel(inputUserName, inputPassWord);
+				checkMatch = logInModel.CheckMatch();
+				if(checkMatch){
+					//login successfully
+					Toast.makeText(LogInView.this,
+	                        "successful!", Toast.LENGTH_SHORT).show();
+				}else{
+					Toast.makeText(LogInView.this,
+	                        "not match!", Toast.LENGTH_SHORT).show();
+				}
+			}
+			
+		}
+		
+	}
 }

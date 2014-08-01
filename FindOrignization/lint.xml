@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
-    <issue id="NewApi">
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
         <ignore path="src/com/example/zhaozuzhi/MainPageActivity.java" />
     </issue>
+    <issue id="Recycle" severity="ignore" />
+    <issue id="ValidFragment" severity="ignore" />
 </lint>

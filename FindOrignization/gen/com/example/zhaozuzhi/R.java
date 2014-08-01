@@ -8,6 +8,10 @@
 package com.example.zhaozuzhi;
 
 public final class R {
+    public static final class array {
+        public static final int birds=0x7f080000;
+        public static final int birds_img=0x7f080001;
+    }
     public static final class attr {
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -135,29 +139,40 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int slidingmenu_offset=0x7f050002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int loginbackground=0x7f020001;
-        public static final int shadow=0x7f020002;
+        public static final int eagle=0x7f020000;
+        public static final int flamingo=0x7f020001;
+        public static final int heron=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int loginbackground=0x7f020004;
+        public static final int octocat=0x7f020005;
+        public static final int ostrich=0x7f020006;
+        public static final int peacock=0x7f020007;
+        public static final int penguin=0x7f020008;
+        public static final int shadow=0x7f020009;
+        public static final int toucan=0x7f02000a;
+        public static final int turkey=0x7f02000b;
+        public static final int vulture=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f040013;
+        public static final int action_settings=0x7f040014;
         public static final int content_frame=0x7f04000e;
         public static final int fullscreen=0x7f040003;
+        public static final int grid_item_img=0x7f04000f;
         public static final int inputName=0x7f04000a;
         public static final int inputPassword=0x7f040009;
         public static final int inputUser=0x7f04000c;
         public static final int left=0x7f040000;
         public static final int logIn=0x7f040007;
         public static final int margin=0x7f040002;
-        public static final int menu_frame=0x7f04000f;
+        public static final int menu_frame=0x7f040010;
         public static final int password=0x7f040008;
         public static final int register=0x7f040005;
         public static final int right=0x7f040001;
-        public static final int row_icon=0x7f040010;
-        public static final int row_title=0x7f040011;
+        public static final int row_icon=0x7f040011;
+        public static final int row_title=0x7f040012;
         public static final int selected_view=0x7f040004;
         public static final int showUserName=0x7f04000d;
-        public static final int slidingmenumain=0x7f040012;
+        public static final int slidingmenumain=0x7f040013;
         public static final int titleProject=0x7f040006;
         public static final int userName=0x7f04000b;
     }
@@ -169,15 +184,18 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_main_page=0x7f030001;
         public static final int activity_register_view=0x7f030002;
         public static final int content_frame=0x7f030003;
-        public static final int list=0x7f030004;
-        public static final int menu_frame=0x7f030005;
-        public static final int row=0x7f030006;
-        public static final int slidingmenumain=0x7f030007;
+        public static final int grid_item=0x7f030004;
+        public static final int list=0x7f030005;
+        public static final int list_grid=0x7f030006;
+        public static final int menu_frame=0x7f030007;
+        public static final int responsive_content_frame=0x7f030008;
+        public static final int row=0x7f030009;
+        public static final int slidingmenumain=0x7f03000a;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
-        public static final int main_page=0x7f090001;
-        public static final int register_view=0x7f090002;
+        public static final int main=0x7f0a0000;
+        public static final int main_page=0x7f0a0001;
+        public static final int register_view=0x7f0a0002;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
@@ -215,11 +233,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f090001;
     }
     public static final class styleable {
         /** Attributes that can be used with a SlidingMenu.

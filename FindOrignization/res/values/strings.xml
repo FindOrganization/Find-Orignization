@@ -13,5 +13,30 @@
     <string name="login">Lon In</string>
     <string name="title_activity_register_view">RegisterView</string>
     <string name="title_activity_main_page">MainPageActivity</string>
+    
+    
+    <string-array name="birds">
+        <item>Eagle</item>
+        <item>Flamingo</item>
+        <item>Heron</item>
+        <item>Ostrich</item>
+        <item>Peacock</item>
+        <item>Penguin</item>
+        <item>Toucan</item>
+        <item>Turkey</item>
+        <item>Vulture</item>
+    </string-array>
+    
+    <string-array name="birds_img">
+        <item>@drawable/eagle</item>
+        <item>@drawable/flamingo</item>
+        <item>@drawable/heron</item>
+        <item>@drawable/ostrich</item>
+        <item>@drawable/peacock</item>
+        <item>@drawable/penguin</item>
+        <item>@drawable/toucan</item>
+        <item>@drawable/turkey</item>
+        <item>@drawable/vulture</item>
+    </string-array>
 
 </resources>

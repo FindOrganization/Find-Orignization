@@ -16,15 +16,15 @@
     
     
     <string-array name="birds">
-        <item>Eagle</item>
-        <item>Flamingo</item>
-        <item>Heron</item>
-        <item>Ostrich</item>
-        <item>Peacock</item>
-        <item>Penguin</item>
-        <item>Toucan</item>
-        <item>Turkey</item>
-        <item>Vulture</item>
+        <item>Search</item>
+        <item>Favourite</item>
+        <item>Message</item>
+        <item>Off-Line</item>
+        <item>Activity</item>
+        <item>Settings</item>
+        <item>Report</item>
+        <item>More Apps</item>
+        <item>Team</item>
     </string-array>
     
     <string-array name="birds_img">

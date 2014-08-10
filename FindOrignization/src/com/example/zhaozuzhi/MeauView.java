@@ -30,7 +30,11 @@ public class MeauView extends ListFragment {
 	@Override
 	public void onListItemClick(ListView lv, View v, int position, long id) {
 		Fragment newContent = new CommentsFragment(position);
-		if (newContent != null)
+		if(position==0)
+		{
+			switchFragment(new ThreadFragment());
+		}
+		else if  (newContent != null)
 			switchFragment(newContent);
 	}
 	

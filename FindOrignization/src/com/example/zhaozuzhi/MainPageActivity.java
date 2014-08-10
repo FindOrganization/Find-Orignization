@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 public class MainPageActivity extends SlidingFragmentActivity {
 
-	
 	private String username;
 	private TextView showUserName;
 	private Fragment mContent;
+	private ThreadFragment threadFragment = new ThreadFragment();
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,14 +29,16 @@ public class MainPageActivity extends SlidingFragmentActivity {
 		//username=receiveIntent.getStringExtra("name");
 		//showUserName.setText("welcome "+username);
 		setTitle("Sliding Content only");
-		
-		
 		//set main page
 		setContentView(R.layout.responsive_content_frame);
 		initSlidingMenu(savedInstanceState);
+		
 	}
 
-	
+	/**
+	 * this is the sliding muen view 
+	 * @param savedInstanceState
+	 */
 	private void initSlidingMenu(Bundle savedInstanceState){
 		// check if the content frame contains the menu frame
 		if (findViewById(R.id.menu_frame) == null) {
@@ -58,9 +60,9 @@ public class MainPageActivity extends SlidingFragmentActivity {
 			mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
 		if (mContent == null)
 			mContent = new CommentsFragment(0);
+			
 		
-		
-		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, mContent).commit();
+		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, threadFragment).commit();
 
 		// set the Behind View Fragment
 		getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame, new MeauView()).commit();
@@ -71,8 +73,6 @@ public class MainPageActivity extends SlidingFragmentActivity {
 		sm.setShadowDrawable(R.drawable.shadow);
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		sm.setFadeDegree(0.35f);
-
-
 		getActionBar().setDisplayHomeAsUpEnabled(true);			
 	}
 	

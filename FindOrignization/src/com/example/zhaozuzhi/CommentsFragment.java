@@ -20,7 +20,7 @@ public class CommentsFragment extends Fragment{
 	private int mImgRes;
 	
 	public CommentsFragment(int pos) {
-		mPos = pos;
+		this.mPos = pos;
 	}
 	
 	@Override

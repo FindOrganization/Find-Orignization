@@ -13,10 +13,10 @@
     <string name="login">Lon In</string>
     <string name="title_activity_register_view">RegisterView</string>
     <string name="title_activity_main_page">MainPageActivity</string>
-    
-    
+    <string name="search">Search</string>
+
     <string-array name="birds">
-        <item>Search</item>
+        <item>看帖</item>
         <item>Favourite</item>
         <item>Message</item>
         <item>Off-Line</item>
@@ -26,9 +26,7 @@
         <item>More Apps</item>
         <item>Team</item>
     </string-array>
-    
     <string-array name="birds_img">
-        <item>@drawable/eagle</item>
         <item>@drawable/flamingo</item>
         <item>@drawable/heron</item>
         <item>@drawable/ostrich</item>
@@ -38,5 +36,7 @@
         <item>@drawable/turkey</item>
         <item>@drawable/vulture</item>
     </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

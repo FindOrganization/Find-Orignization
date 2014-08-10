@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
-import com.google.gson.JsonElement;
 /**
 * A Comments object contains the user id,master comments id,sub comments id, sub comments title and body,a picture if it has
 * date,location of the comments posted, a userName which published this comment
@@ -20,7 +19,7 @@ public class CommentModel implements Serializable{
 	private Date comment_date;
 	private double lon ;
 	private double lat;
-	private JsonElement image_encode;
+	//private JsonElement image_encode;
 	private int userID;
 	private String userName;
 	private ArrayList<String> TagsList= new ArrayList<String>();
@@ -69,7 +68,7 @@ public class CommentModel implements Serializable{
 	 * @param userName   User's name
 	 * @param encode     Picture
 	 */
-	public CommentModel(int user_id,int masterid , int sid,int subid,String title, String subject,Date the_date,double lon,double lat,JsonElement encode, String userName)
+	public CommentModel(int user_id,int masterid , int sid,int subid,String title, String subject,Date the_date,double lon,double lat, String userName)
 	{   
 		this.master_comment_ID=masterid;
 		this.sub_comments_ID=sid;
@@ -78,7 +77,7 @@ public class CommentModel implements Serializable{
 		this.subject_comment=subject;
 		this.lon = lon;
 		this.lat = lat;
-		this.image_encode=encode;
+		//this.image_encode=encode;
 		this.userID=user_id;
 		this.userName = userName;
 	}
@@ -320,9 +319,9 @@ public class CommentModel implements Serializable{
 	 * @return
 	 * the image encode
 	 */
-	public JsonElement getImage_encode() {
+	/*public JsonElement getImage_encode() {
 		return image_encode;
-	}
+	}*/
 
 
 
@@ -330,9 +329,9 @@ public class CommentModel implements Serializable{
 	 * set the image encode
 	 * @param image_encode -- the image encode
 	 */
-	public void setImage_encode(JsonElement image_encode) {
+	/*public void setImage_encode(JsonElement image_encode) {
 		this.image_encode = image_encode;
-	}
+	}*/
 
 
 

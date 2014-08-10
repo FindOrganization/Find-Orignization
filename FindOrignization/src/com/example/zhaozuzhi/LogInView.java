@@ -52,6 +52,10 @@ public class LogInView extends Activity {
 		
 		register.setOnClickListener(new registerListener());
 		logIn.setOnClickListener(new logInListener());
+		Intent sucIntent = new Intent();
+		
+		sucIntent.setClass(LogInView.this, MainPageActivity.class);
+		startActivity(sucIntent);
 	}
 
 	@Override

@@ -5,7 +5,7 @@ import java.util.Date;
 
 import android.graphics.Bitmap;
 
-public class Thread {
+public class Tiezi {
 	
 		private String title="";
 		private String content="";
@@ -20,7 +20,7 @@ public class Thread {
 		private long longitude;
 		private long latitude;
 		// need to finish constructor 
-		public Thread()
+		public Tiezi()
 		{
 			
 		}

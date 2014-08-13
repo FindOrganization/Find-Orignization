@@ -34,8 +34,27 @@ public class MeauView extends ListFragment {
 		{
 			switchFragment(new ThreadFragment());
 		}
-		else if  (newContent != null)
-			switchFragment(newContent);
+		else if  (newContent != null){
+			switch(position){
+			case 0:
+				switchFragment(new ThreadFragment());
+				break;
+			case 1:
+				switchFragment(new ThreadFragment());
+				break;
+			case 2:
+				switchFragment(new ThreadFragment());
+				break;
+			case 3:
+				switchFragment(new ThreadFragment());
+				break;
+			case 4:
+				switchFragment(new ThreadFragment());
+				break;
+	
+			}
+		}
+			
 	}
 	
 	// the meat of switching the above fragment

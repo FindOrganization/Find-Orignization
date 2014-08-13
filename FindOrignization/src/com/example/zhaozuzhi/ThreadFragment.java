@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import com.example.controller.ThreadAdapter;
 import com.example.model.Tiezi;
 
-import android.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;

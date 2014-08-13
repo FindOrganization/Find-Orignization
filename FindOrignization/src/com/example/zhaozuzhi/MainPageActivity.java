@@ -20,7 +20,8 @@ public class MainPageActivity extends SlidingFragmentActivity {
 	private String username;
 	private TextView showUserName;
 	private Fragment mContent;
-	private ThreadFragment threadFragment = new ThreadFragment();
+	private int noPick=-1;
+	private ThreadFragment threadFragment;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -56,10 +57,32 @@ public class MainPageActivity extends SlidingFragmentActivity {
 		}
 		
 		//set fragment view
-		if (savedInstanceState != null)
-			mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
+		
+		if (savedInstanceState != null){
+			noPick = savedInstanceState.getInt("noPic");
+			switch(noPick){
+				case 0:
+					threadFragment = new ThreadFragment();
+					break;
+				case 1:
+					threadFragment = new ThreadFragment();
+					break;
+				case 2:
+					threadFragment = new ThreadFragment();
+					break;
+				case 3:
+					threadFragment = new ThreadFragment();
+					break;
+				case 4:
+					threadFragment = new ThreadFragment();
+					break;
+		
+			}
+		}
+			
+			//mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
 		if (mContent == null)
-			mContent = new CommentsFragment(0);
+			threadFragment = new ThreadFragment();
 			
 		
 		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, threadFragment).commit();

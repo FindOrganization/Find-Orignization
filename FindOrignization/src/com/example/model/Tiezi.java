@@ -20,7 +20,7 @@ public class Tiezi {
 		private long longitude;
 		private long latitude;
 		// need to finish constructor 
-		public Tiezi()
+		public Tiezi(String title,int id)
 		{
 			
 		}
